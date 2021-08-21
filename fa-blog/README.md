@@ -4,8 +4,8 @@ Simpe micro blog application using React.
 
 ## API
 
-Dummy API created using JSON server. You can just run 'npm i json-server' to install JSON Server.
-Then run 'npx json-server --watch data/db.json --port 8000' this command to run your dummy backend.
+Dummy API created using JSON server. You can just run `npm i -g json-server` to install JSON Server globally.
+Then run `npx json-server --watch data/db.json --port 8000` this command to run your dummy backend.
 
 ## Available Scripts
 
@@ -27,9 +27,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You just pull this repo to netlify with build command. [deploy-to-netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) for more info
+
+### Credits
+
+@iamshaunjp
 
