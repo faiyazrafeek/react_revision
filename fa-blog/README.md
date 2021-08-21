@@ -2,6 +2,11 @@
 
 Simpe micro blog application using React.
 
+## API
+
+Dummy API created using JSON server. You can just run 'npm i json-server' to install JSON Server.
+Then run 'npx json-server --watch data/db.json --port 8000' this command to run your dummy backend.
+
 ## Available Scripts
 
 In the project directory, you can run:
