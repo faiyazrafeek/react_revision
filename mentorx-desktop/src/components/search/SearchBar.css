@@ -1,0 +1,32 @@
+.search-bar{
+    display: block;
+    width: 650px;
+    height: 50px;
+    display: flex;
+}
+
+.search-bar input{
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+    background: #e7e7e7;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-bar .search-btn{
+    display: inline-block;
+    height: 100%;
+    width: 80px;
+    background: #364fb6;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}

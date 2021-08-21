@@ -1,0 +1,72 @@
+.sidebar{
+    max-width: 200px;
+    margin-right: 155px;
+}
+
+.sidebar .sidebar-result{
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #c4c4c4; */
+}
+
+.sidebar .sidebar-category{
+    padding: 15px;
+    border-top: 1px solid #c4c4c4;
+}
+
+.sidebar .sidebar-type{
+    padding: 15px;
+    border-top: 1px solid #c4c4c4;
+}
+
+.sidebar .sidebar-posted-by{
+    padding: 15px;
+    border-top: 1px solid #c4c4c4;
+}
+
+.sidebar .sidebar-item-title{
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;    
+}
+
+.sidebar .sidebar-cat-list{
+    list-style: none;  
+}
+
+.sidebar .sidebar-cat-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-cat-item input{
+    margin-right: 10px;
+}
+
+.sidebar .sidebar-type-list{
+    list-style: none;  
+}
+
+.sidebar .sidebar-type-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-type-item input{
+    margin-right: 10px;
+}
+
+.sidebar .sidebar-posted-list{
+    list-style: none;  
+}
+
+.sidebar .sidebar-posted-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-posted-item input{
+    margin-right: 10px;
+}

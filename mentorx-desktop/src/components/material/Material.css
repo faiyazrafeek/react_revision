@@ -1,0 +1,9 @@
+.material{
+    width: 650px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.material-details{
+    margin: 15px 0;
+}

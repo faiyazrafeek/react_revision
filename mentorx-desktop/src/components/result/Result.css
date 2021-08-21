@@ -1,0 +1,22 @@
+.result{
+    /* padding: 0 30px; */
+}
+
+.result-search-box{
+    padding: 20px 0;   
+    background: rgb(231, 231, 231);
+}
+
+.result-search-box .search-box {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result .content{
+    padding: 20px 30px 0;
+}
+
+.result .content{
+    display: flex;
+}

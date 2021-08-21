@@ -1,0 +1,32 @@
+.navbar{
+    height: 70px;
+    /* background: rgb(102, 102, 102); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.navbar h2.nav-logo{
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #364fb6;
+    cursor: pointer;
+}
+
+.navbar .navlink{
+    display: flex;
+    list-style: none;
+}
+
+.navbar .navlink .nav-item {
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar .navlink .nav-item:hover {
+    border-bottom: 2px solid #364fb6;
+    
+}
