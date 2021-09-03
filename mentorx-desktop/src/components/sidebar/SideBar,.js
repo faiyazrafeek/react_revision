@@ -15,15 +15,15 @@ const SideBar = () => {
                 </span>
                 <ul className="sidebar-cat-list">
                     <li className="sidebar-cat-item">
-                        <input type="radio" />
+                        <input type="radio"  name="category" />
                         <span>O/L</span>
                     </li>
                     <li className="sidebar-cat-item">
-                        <input type="radio" />
+                        <input type="radio" name="category" />
                         <span>A/L</span>
                     </li>
                     <li className="sidebar-cat-item">
-                        <input type="radio" />
+                        <input type="radio" name="category" />
                         <span>University</span>
                     </li>
                 </ul>              
@@ -34,11 +34,11 @@ const SideBar = () => {
                 </span>
                 <ul className="sidebar-type-list">
                     <li className="sidebar-type-item">
-                        <input type="radio" />
+                        <input type="radio" name="type" />
                         <span>PDF</span>
                     </li>
                     <li className="sidebar-type-item">
-                        <input type="radio" />
+                        <input type="radio" name="type" />
                         <span>Video</span>
                     </li>
                 </ul>   
@@ -49,11 +49,11 @@ const SideBar = () => {
                 </span>
                 <ul className="sidebar-posted-list">
                     <li className="sidebar-posted-item">
-                        <input type="radio" />
+                        <input type="radio" name="author" />
                         <span>Anaz</span>
                     </li>
                     <li className="sidebar-posted-item">
-                        <input type="radio" />
+                        <input type="radio" name="author" />
                         <span>Gowthami</span>
                     </li>
                 </ul>   

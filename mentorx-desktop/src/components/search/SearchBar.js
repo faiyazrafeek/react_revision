@@ -1,10 +1,13 @@
 import './SearchBar.css'
+import { Link } from 'react-router-dom'
 
 const SearchBar = () => {
     return ( 
         <div className="search-bar">
             <input type="text" />
-            <button className="search-btn">Search</button>            
+            <Link to="/result">
+                <button className="search-btn">Search</button>            
+            </Link>
         </div>
      );
 }

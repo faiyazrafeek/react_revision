@@ -27,6 +27,8 @@
 }
 
 .navbar .navlink .nav-item:hover {
+    display: block;
     border-bottom: 2px solid #364fb6;
-    
+    /* transform: scaleX(0);  
+    transition: transform 250ms ease-in-out; */
 }

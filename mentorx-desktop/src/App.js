@@ -3,13 +3,21 @@ import Home from './components/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Result from './components/result/Result';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar/>
-      {/* <Home/> */}
-      <Result/>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/result">
+        <Result />
+      </Route>
+    </Switch>
+  </Router>
   );
 }
 

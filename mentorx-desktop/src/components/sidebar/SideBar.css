@@ -70,3 +70,7 @@
 .sidebar .sidebar-posted-item input{
     margin-right: 10px;
 }
+
+.sidebar-category input, .sidebar-type input, .sidebar-posted-by input{
+    cursor: pointer;
+}
