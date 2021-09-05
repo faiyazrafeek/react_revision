@@ -1,8 +1,10 @@
 import './Material.css'
 
-const Material = () => {
+const Material = ({clickMaterial}) => {
+  
+
     return ( 
-        <div className="material">
+        <div className="material" onClick={clickMaterial} >
             <h2>UOM Aptitude Test Paper 2021</h2>
             <div className="material-details">
                 <span>Posted by : Ameen on </span>

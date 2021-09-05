@@ -7,7 +7,6 @@ const SideBar = () => {
                 <span className="sidebar-item-title">
                     8 results
                 </span>
-
             </div>
             <div className="sidebar-category">
                 <span className="sidebar-item-title">

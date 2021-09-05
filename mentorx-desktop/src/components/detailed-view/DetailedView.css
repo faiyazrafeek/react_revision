@@ -1,0 +1,7 @@
+.detailed-view{
+    background: rgb(238, 238, 238);
+    height: calc(100vh - 161px);
+    /* height: 100%; */
+    padding: 20px 200px;
+    padding-left: 20px;
+}

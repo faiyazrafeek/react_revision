@@ -1,12 +1,22 @@
 import './MaterialList.css';
 import Material from '../material/Material';
 
-const MaterialList = () => {
+const MaterialList = ({clickMaterial}) => {
     return ( 
         <div className="material-list">
-            <Material/>
-            <Material/>
-            <Material/>
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
+            <Material clickMaterial = {clickMaterial} />
         </div>
      );
 }

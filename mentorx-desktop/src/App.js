@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Result from './components/result/Result';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Loader from './components/loader/Loader';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
     <Switch>
       <Route exact path="/">
+        <Loader/>
         <Home />
       </Route>
       <Route path="/result">
