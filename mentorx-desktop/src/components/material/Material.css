@@ -1,10 +1,26 @@
 .material{
     width: 650px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #c4c4c4;
     cursor: pointer;
+    padding: 15px;
+    border: solid 1px transparent;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.material:hover{
+    background-color: #3650b623;
+    border: 1px solid #3650b670;
+    
 }
 
 .material-details{
     margin: 15px 0;
 }
+
+.material-footer{
+    margin-top: 15px;
+    font-size: 1.4em;
+    display: flex;
+    
+}
+

@@ -14,27 +14,8 @@
     margin-right: auto;
 }
 
-
 .result .content{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.result .content .left-result{
-    display: flex;
-    flex: 2;
-    justify-content: space-between;
-    margin-right: 20px;
-}
-
-.result .content .right-result.show{
-    visibility: visible;
-    opacity: 1;
-}
-
-.result .content .right-result{   
-    flex: 1;
-    transition: visibility 0.5s, opacity 0.5s linear;
-    visibility: hidden;
-    opacity: 0;
-}

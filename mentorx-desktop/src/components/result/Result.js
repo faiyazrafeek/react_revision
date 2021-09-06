@@ -1,17 +1,28 @@
-import { useState } from 'react';
-import DetailedView from '../detailed-view/DetailedView';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import MaterialList from '../material-list/MaterialList';
 import SearchBar from '../search/SearchBar';
 import SideBar from '../sidebar/SideBar,'
+import { useLocation } from 'react-router'
 import './Result.css'
 
 const Result = () => {
-    const [detail, setDetail] = useState(false)
+    const [posts, setPosts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
-    const clickMaterial = () => {
-        setDetail(!detail)
-    }
+    const api_uri = "https://mentorxfa.herokuapp.com/api/posts";
+    const {search} = useLocation();
 
+    useEffect(() => {
+        const fetchPosts = async() => {
+            const res = await axios.get(api_uri + search);
+            setPosts(res.data.sort((a, b) => a.createdAt > b.createdAt ? -1 : 1));
+            setIsLoading(false)  
+        }
+        fetchPosts()   
+        
+        return () => { setPosts([]);setIsLoading(false) };
+    }, []);
     return ( 
         <div className="result">
             <div className="result-search-box">
@@ -19,16 +30,10 @@ const Result = () => {
                     <SearchBar/>
                 </div>
             </div>
-            <div className="content">
-                <div className="left-result">
+            <div className="content">               
                     <SideBar/>
-                    <MaterialList clickMaterial= {clickMaterial} />
-                </div>
-                <div className={`right-result ${ detail ? "show" : "" }`}>
-                 <DetailedView/> 
-                </div>
-            </div>
-            
+                    <MaterialList loading={isLoading} posts={posts} />                        
+            </div>            
         </div>
      );
 }
