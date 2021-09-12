@@ -9,6 +9,8 @@ import './Result.css'
 const Result = () => {
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [searchTerm, setSearchTerm] = useState("");
+
 
     const api_uri = "https://mentorxfa.herokuapp.com/api/posts";
     const {search} = useLocation();
@@ -21,18 +23,18 @@ const Result = () => {
         }
         fetchPosts()   
         
-        return () => { setPosts([]);setIsLoading(false) };
+        return () => { setPosts([]);setIsLoading(false);setSearchTerm("") };
     }, [search]);
     return ( 
         <div className="result">
             <div className="result-search-box">
                 <div className="search-box">
-                    <SearchBar/>
+                    <SearchBar term={(e) => {setSearchTerm(e.target.value)}} />
                 </div>
             </div>
             <div className="content">               
                     <SideBar matCount={posts.length} />
-                    <MaterialList loading={isLoading} posts={posts} />                        
+                    <MaterialList loading={isLoading} posts={posts}  searchTerm={searchTerm} />                        
             </div>            
         </div>
      );

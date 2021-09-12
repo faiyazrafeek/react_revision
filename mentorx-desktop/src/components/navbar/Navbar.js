@@ -10,7 +10,7 @@ const Navbar = () => {
             <ul className="navlink">
                 <li className="nav-item">Search</li>
                 <li className="nav-item">Bookmarks</li>
-                <li className="nav-item">Faiyaz Rafeek</li>
+                <li className="nav-item">Login</li>
             </ul>            
         </div>
      );

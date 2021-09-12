@@ -23,6 +23,14 @@
     margin: 20px 0;
 }
 
+.detail-category{
+    display: inline-block;
+    background-color: #3650b623;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 0 0 10px 0;
+}
+
 .detail-footer{
     margin-top: 20px;
     font-size: 1.4em;
@@ -34,8 +42,9 @@
 .detail-download{
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 9px;
     background-color: #364fb6;
+    border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
@@ -47,9 +56,24 @@
 .detail-library{
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 9px;
     background-color: #36a3b6;
+    border: 1px solid transparent;
     color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.detail-library-on{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: 1px solid #36a3b6;
+    background-color: transparent;
+    color: #36a3b6;
     font-size: 15px;
     cursor: pointer;
     display: flex;

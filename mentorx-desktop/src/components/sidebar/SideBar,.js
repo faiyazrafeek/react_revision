@@ -35,7 +35,7 @@ const SideBar = ({matCount}) => {
         <div className="sidebar">
             <div className="sidebar-result">
                 <span className="sidebar-item-title">
-                    {matCount} results
+                    {matCount ? matCount : '...'} results
                 </span>
             </div>
             <div className="sidebar-category">
@@ -53,7 +53,7 @@ const SideBar = ({matCount}) => {
                     }
                 </ul>              
             </div>
-            <div className="sidebar-type">
+            {/* <div className="sidebar-type">
                 <span className="sidebar-item-title">
                     Material Type
                 </span>
@@ -67,7 +67,7 @@ const SideBar = ({matCount}) => {
                         <span>Video</span>
                     </li>
                 </ul>   
-            </div>
+            </div> */}
             <div className="sidebar-posted-by">
                 <span className="sidebar-item-title">
                     Posted By

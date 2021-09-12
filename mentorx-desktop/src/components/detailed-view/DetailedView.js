@@ -49,14 +49,15 @@ export default function DetailedView() {
             <div className="detail-body">
                 <h2>{material.title}  </h2>
                 <div className="detail-body-details">
-                    <Link className="link" to={`/result/?user=${material.username}`}>Posted by : {material.username} </Link>
-                    <span>{new Date(material.createdAt).toLocaleDateString()}</span>
+                    <Link className="link" to={`/result/?user=${material.username}`}>Posted by : {material.username} on <span>{new Date(material.createdAt).toLocaleDateString()}</span> </Link>
+                    
                 </div>
                 
                 <p>{material.desc}</p>
+                <span className="detail-category">{material.categories}</span>
                 <div className="detail-footer">
                     <button onClick={downloadMaterial} className="detail-download"> Download <FaCloudDownloadAlt/></button>                               
-                    <button onClick={addtoBookmark} className="detail-library"> { !bookmark ? `Add to Bookmarks` : 'Remove from Bookmark' } <VscLibrary/></button>                               
+                    <button onClick={addtoBookmark} className={!bookmark ? `detail-library-on` : 'detail-library'}> { !bookmark ? `Add to Bookmarks` : 'Remove from Bookmark' } <VscLibrary/></button>                               
                 </div>
             </div>
         </div>
