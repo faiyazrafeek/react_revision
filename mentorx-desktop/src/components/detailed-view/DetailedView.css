@@ -6,7 +6,7 @@
     cursor: pointer;
     font-size: 2em;
     color: #7e7e7e;
-    border-bottom: 1px solid #c4c4c4;
+    /* border-bottom: 1px solid #c4c4c4; */
 }
 
 .detail-body h2{
@@ -37,7 +37,20 @@
     border-radius: 25px;
     background-color: #364fb6;
     color: #fff;
-    font-size: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.detail-library{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #36a3b6;
+    color: #fff;
+    font-size: 15px;
     cursor: pointer;
     display: flex;
     align-items: center;

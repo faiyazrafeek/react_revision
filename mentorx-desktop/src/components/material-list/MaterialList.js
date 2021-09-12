@@ -10,8 +10,8 @@ const MaterialList = ({posts, loading}) => {
             {
                 loading ? <Loader/> :
                 posts.map(post => (
-                    <Link className="link" to={`/result/${post._id}`}>
-                        <Material loading={loading} key={post._id} material={post} />
+                    <Link className="link" to={`/result/${post._id}`} key={post._id} >
+                        <Material loading={loading}  material={post} />
                     </Link>
                 ))
             }

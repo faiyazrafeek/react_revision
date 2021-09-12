@@ -22,7 +22,7 @@ const Result = () => {
         fetchPosts()   
         
         return () => { setPosts([]);setIsLoading(false) };
-    }, []);
+    }, [search]);
     return ( 
         <div className="result">
             <div className="result-search-box">
@@ -31,7 +31,7 @@ const Result = () => {
                 </div>
             </div>
             <div className="content">               
-                    <SideBar/>
+                    <SideBar matCount={posts.length} />
                     <MaterialList loading={isLoading} posts={posts} />                        
             </div>            
         </div>

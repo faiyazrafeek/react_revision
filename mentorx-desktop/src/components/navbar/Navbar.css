@@ -24,6 +24,7 @@
     display: block;
     margin-left: 20px;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar .navlink .nav-item:hover {

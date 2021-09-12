@@ -6,6 +6,7 @@ import { useLocation } from 'react-router'
 import { useHistory } from 'react-router-dom'
 import axios from 'axios';
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import { VscLibrary } from "react-icons/vsc";
 
 export default function DetailedView() {
 
@@ -17,6 +18,7 @@ export default function DetailedView() {
     const [desc, setDesc] = useState("");
     const [url, setUrl] = useState("");
     const [isLoading, setIsLoading] = useState(true);
+    const [bookmark, setBookmark] = useState(false);
 
     const history = useHistory();
    
@@ -35,6 +37,10 @@ export default function DetailedView() {
         window.open(url)
     }
 
+    const addtoBookmark = () => {
+        setBookmark(!bookmark)
+    }
+
     return (
         <div className="detailed-view">
             <div className="detail-header">
@@ -50,6 +56,7 @@ export default function DetailedView() {
                 <p>{material.desc}</p>
                 <div className="detail-footer">
                     <button onClick={downloadMaterial} className="detail-download"> Download <FaCloudDownloadAlt/></button>                               
+                    <button onClick={addtoBookmark} className="detail-library"> { !bookmark ? `Add to Bookmarks` : 'Remove from Bookmark' } <VscLibrary/></button>                               
                 </div>
             </div>
         </div>
